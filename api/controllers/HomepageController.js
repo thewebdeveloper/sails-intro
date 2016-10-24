@@ -6,6 +6,11 @@
  */
 
 module.exports = {
+
+	_config: {
+		actions: false
+	}
+
 	index: function(request, response) {
 		return response.view('homepage', {
 			currentDate: (new Date()).toString()
